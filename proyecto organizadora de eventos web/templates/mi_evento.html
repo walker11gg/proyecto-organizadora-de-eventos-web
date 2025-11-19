@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mi evento</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+
+    <style>
+        body { margin: 20px; font-family: Arial; }
+        h2 { margin-bottom: 10px; }
+        label { font-weight: bold; margin-top: 10px; display: block; }
+        input, select, textarea {
+            width: 100%; padding: 8px; margin-top: 5px;
+            border: 1px solid #ccc; border-radius: 5px;
+        }
+        button {
+            background: #2563eb; color: #fff; border: none;
+            padding: 10px 15px; border-radius: 5px; cursor: pointer;
+            margin-top: 15px;
+        }
+        button:hover {
+            background: #1e4bb8;
+        }
+        #mensaje { margin-top: 10px; }
+    </style>
+</head>
+<body class="dashboard-body">
+
+    <div class="evento-container">
+
+        <h2 class="evento-title">Gestionar mi Evento</h2>
+
+        <form id="eventoForm" class="evento-form">
+
+            <div class="input-group">
+                <label>Tipo de evento</label>
+                <input type="text" id="tipo_evento" placeholder="Boda, cumpleaños, etc.">
+            </div>
+
+            <div class="input-group">
+                <label>Fecha</label>
+                <input type="date" id="fecha">
+            </div>
+
+            <div class="input-group">
+                <label>Ubicación</label>
+                <input type="text" id="ubicacion" placeholder="Dirección del evento">
+            </div>
+
+            <div class="input-group">
+                <label>Número de invitados</label>
+                <input type="number" id="invitados" min="1">
+            </div>
+
+            <div class="input-group">
+                <label>Plan</label>
+                <select id="plan">
+                    <option value="">Selecciona un plan</option>
+                    <option value="Bronce">Bronce</option>
+                    <option value="Plata">Plata</option>
+                    <option value="Oro">Oro</option>
+                    <option value="Diamante">Diamante</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label>Descripción</label>
+                <textarea id="descripcion" rows="4" placeholder="Detalles adicionales del evento"></textarea>
+            </div>
+
+            <button type="submit" class="btn-dashboard">Guardar cambios</button>
+
+            <p id="mensaje" class="dashboard-msg"></p>
+        </form>
+
+    </div>
+
+    <script src="/static/js/mi_evento.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+{
+    "usuarios": {
+        "3132639612": {
+            "id": "3132639612",
+            "nombre": "esteban",
+            "email": "esteban@gmail.com",
+            "password": "$2b$12$octMrxrTlmhw4tqsw7K9nuaCJL3.kIXmuPG9FzaKtOpX7Z8PdtILu",
+            "rol": "cliente",
+            "activo": true
+        },
+        "3844744511": {
+            "id": "3844744511",
+            "nombre": "juan",
+            "email": "juancho@gmail.com",
+            "password": "$2b$12$5uai1lPNJIyLzI/.7fN8SuN.DepLnnqmjmdE2jqCyKldE8MakxajO",
+            "rol": "cliente",
+            "activo": true
+        },
+        "9cf6f3d6-cb3f-4799-84c1-fd3184266597": {
+            "id": "9cf6f3d6-cb3f-4799-84c1-fd3184266597",
+            "nombre": "manolo",
+            "email": "manolo@gmail.com",
+            "password": "$2b$12$xiHl.BarF4.47aFUq/FSLeZXkE1fjVSV5ee4aNrFLPoCR5lRl5IF.",
+            "rol": "cliente",
+            "activo": true
+        },
+        "44dbe3d8-21b1-486e-887e-71b2b76ea120": {
+            "id": "44dbe3d8-21b1-486e-887e-71b2b76ea120",
+            "nombre": "jhon",
+            "email": "jhon117@gmail.com",
+            "password": "$2b$12$qAtP4NrsfiBxEW1Jx5Gs6O3E4PEraoQLrqzJCyt2pViBcUrglwRW6",
+            "rol": "cliente",
+            "activo": true
+        }
+    }
+}

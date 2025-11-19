@@ -1,0 +1,233 @@
+/* Fondo general para ambas pantallas */
+.login-body, .register-body {
+    background: #f3f4f6;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor principal (tarjeta) */
+.login-container, .register-container {
+    background: #ffffff;
+    padding: 35px;
+    width: 380px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* Títulos */
+.login-title, .register-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #1f2937;
+}
+
+/* FORMULARIO */
+.login-form, .register-form {
+    width: 100%;
+}
+
+/* Input groups */
+.input-group {
+    text-align: left;
+    margin-bottom: 18px;
+}
+
+.input-group label {
+    font-size: 14px;
+    color: #374151;
+}
+
+/* Inputs */
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: border 0.2s;
+    background: white;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+    border: 1px solid #2563eb;
+}
+
+/* BOTONES */
+.btn-login, .btn-register {
+    width: 100%;
+    padding: 12px;
+    background: #2563eb;  /* Azul igual al login */
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.2s;
+}
+
+.btn-login:hover, .btn-register:hover {
+    background: #1e40af;  /* Azul más oscuro */
+}
+
+/* Texto inferior (links de navegación) */
+.register-text, .login-text {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.register-text a, .login-text a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.register-text a:hover,
+.login-text a:hover {
+    text-decoration: underline;
+}
+
+/* Mensajes debajo de los botones */
+.login-msg, .register-msg {
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+/* ===========================
+   DASHBOARD (CALENDARIO)
+   =========================== */
+
+.dashboard-body {
+    background: #f3f4f6;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+/* Contenedor principal del dashboard */
+.dashboard-container {
+    width: 90%;
+    max-width: 1100px;
+}
+
+/* Tarjeta superior con título + botón */
+.dashboard-header {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    margin-bottom: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard-header h2 {
+    font-size: 22px;
+    color: #1f2937;
+    margin: 0;
+}
+
+/* Botón azul del dashboard */
+.btn-dashboard {
+    background: #2563eb;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background .2s;
+}
+
+.btn-dashboard:hover {
+    background: #1e40af;
+}
+
+/* Contenedor del calendario */
+.calendar-container {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+/* Mensaje debajo del calendario */
+.dashboard-msg {
+    text-align: center;
+    margin-top: 15px;
+    color: #555;
+    font-size: 14px;
+}
+/* ===========================
+   SIDEBAR CLIENTE
+   =========================== */
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -260px; /* oculto */
+    width: 260px;
+    height: 100vh;
+    background: #ffffff;
+    box-shadow: 3px 0px 10px rgba(0,0,0,0.15);
+    padding: 20px;
+    transition: left 0.3s ease;
+    z-index: 9999;
+}
+
+.sidebar.open {
+    left: 0; /* Mostrar */
+}
+
+.sidebar h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1f2937;
+}
+
+.side-info p {
+    font-size: 14px;
+    margin: 10px 0;
+    color: #374151;
+}
+
+.sidebar-toggle {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.sidebar-toggle:hover {
+    background: #1e40af;
+}
+
+.btn-cerrar {
+    width: 100%;
+    margin-top: 25px;
+    padding: 10px;
+    background: #ef4444;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-cerrar:hover {
+    background: #b91c1c;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/static/css/styles.css" />
+</head>
+//sidebarr en desarrollo
+<body>
+  </style>
+</head>
+<div id="sidebar" class="sidebar">
+    <h3>Mi Perfil</h3>
+
+    <div class="side-info">
+        <p><strong>Nombre:</strong> <span id="sb_nombre"></span></p>
+        <p><strong>Email:</strong> <span id="sb_email"></span></p>
+        <p><strong>ID:</strong> <span id="sb_id"></span></p>
+        <p><strong>Rol:</strong> <span id="sb_rol"></span></p>
+        <p><strong>Estado:</strong> <span id="sb_estado"></span></p>
+    </div>
+
+    <button id="cerrarSidebar" class="btn-cerrar">Cerrar</button>
+</div>
+<body class="dashboard-body">
+
+    <div class="dashboard-container">
+
+        <div class="dashboard-header">
+            <h2>Mi Evento / Calendario</h2>
+            <button id="btnAgregar" class="btn-dashboard">Agregar / Gestionar evento</button>
+        </div>
+
+        <div id="calendar" class="calendar-container"></div>
+
+        <p id="mensaje" class="dashboard-msg"></p>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+    <script src="/static/js/dashboard.js"></script>
+</body>
+</html>
